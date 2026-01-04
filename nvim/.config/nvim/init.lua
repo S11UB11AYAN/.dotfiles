@@ -1005,9 +1005,11 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
+vim.opt.laststatus = 3
 
 -- vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 -- vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.o.background = "dark"
+vim.cmd.colorscheme("vim")
