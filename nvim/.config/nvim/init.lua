@@ -1011,4 +1011,3 @@ vim.opt.laststatus = 3
 -- vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 
 vim.o.background = "dark"
-vim.cmd.colorscheme("vim")

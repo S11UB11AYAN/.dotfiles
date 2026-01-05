@@ -4,7 +4,8 @@ PS1='%/$ '
 
 alias vi=nvim
 alias ls='ls --color=auto'
-alias ll='ls -al'
+alias ll='ls -l'
+alias la='ls -lAFh'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
