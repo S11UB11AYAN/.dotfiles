@@ -685,6 +685,7 @@ require("lazy").setup({
 				cssls = {},
 				tailwindcss = {},
 				emmet_ls = {},
+				jdtls = {},
 				--
 
 				lua_ls = {
