@@ -1007,8 +1007,12 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.laststatus = 3
-
--- vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
--- vim.keymap.set("n", "<S-l>", ":bnext<CR>")
-
+vim.opt.termguicolors = true
 vim.o.background = "dark"
+
+vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
+vim.keymap.set("n", "<S-l>", ":bnext<CR>")
+
+-- select the line and indent them
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
