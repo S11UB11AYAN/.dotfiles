@@ -1034,3 +1034,13 @@ vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 -- select the line and indent them
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
+
+vim.keymap.set("n", "<leader>nn", function()
+	local name = vim.fn.input("Note name: ")
+	if name == "" then
+		return
+	end
+
+	local filename = name:gsub(" ", "-"):lower() .. ".md"
+	vim.cmd("edit " .. filename)
+end, { desc = "Create new markdown note" })
