@@ -15,6 +15,11 @@ return {
 	},
 	opts = {
 		filesystem = {
+			follow_current_file = {
+				enabled = true,
+				leave_dirs_open = true, -- optional (default: false)
+			},
+			use_libuv_file_watcher = true,
 			window = {
 				mappings = {
 					["\\"] = "close_window",
