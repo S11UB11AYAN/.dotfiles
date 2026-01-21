@@ -1044,5 +1044,3 @@ vim.keymap.set("n", "<leader>nn", function()
 	local filename = name:gsub(" ", "-"):lower() .. ".md"
 	vim.cmd("edit " .. filename)
 end, { desc = "Create new markdown note" })
-
-vim.cmd.colorscheme("vim")
