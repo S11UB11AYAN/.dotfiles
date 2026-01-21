@@ -8,7 +8,7 @@ return {
 	},
 	lazy = false,
 	keys = {
-		{ "\\", ":Neotree reveal current<CR>", desc = "NeoTree reveal", silent = true },
+		{ "\\", ":Neotree reveal right<CR>", desc = "NeoTree reveal", silent = true },
 	},
 	opts = {
 		filesystem = {
