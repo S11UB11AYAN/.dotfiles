@@ -1,14 +1,9 @@
 return {
-	"Mofiqul/vscode.nvim",
+	"loctvl842/monokai-pro.nvim",
+	lazy = false,
+	priority = 1000,
 	config = function()
-		require("vscode").setup({
-			transparent = false,
-			italic_comments = false,
-			italic_inlayhints = false,
-			underline_links = false,
-			disable_nvimtree_bg = true,
-			terminal_colors = true,
-		})
-		vim.cmd.colorscheme("vscode")
+		require("monokai-pro").setup()
+		vim.cmd.colorscheme("monokai-pro-classic")
 	end,
 }
