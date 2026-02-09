@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'modus-operandi)
+(setq doom-theme 'modus-vivendi)
 (setq doom-themes-enable-italic nil)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
@@ -76,11 +76,6 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; Enable emmet-mode automatically in JSX and TSX files
 (use-package! emmet-mode
-  :hook ((tsx-ts-mode
-          typescript-ts-mode
-          js-ts-mode
-          web-mode) . emmet-mode)
-  :config
-  (setq emmet-expand-jsx-className? t)
-  (setq emmet-move-cursor-between-quotes t))
+  :hook (( tsx-ts-mode) . emmet-mode))
